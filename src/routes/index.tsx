@@ -19,16 +19,16 @@ export const Route = createFileRoute("/")({
       { title: "Alphard & Vellfire Recond 100% Jepun | Waranti 8 Tahun — SA Alaidin" },
       { name: "description", content: "Alphard & Vellfire recond 100% dari Jepun. Waranti 8 tahun, auction report original, bantuan loan A–Z. WhatsApp SA Alaidin sekarang." },
       { property: "og:title", content: "Alphard & Vellfire Recond — Waranti 8 Tahun" },
-      { property: "og:description", content: "Kereta MPV mewah recond dari Jepun. WhatsApp SA Alaidin untuk info & semakan kelayakan loan." },
+      { property: "og:description", content: "Kereta MPV mewah recond dari Jepun. WhatsApp SA AYIE untuk info & semakan kelayakan loan." },
     ],
   }),
   component: Index,
 });
 
-const WA = "https://wa.me/60135740092?text=";
-const PHONE = "tel:+60135740092";
+const WA = "https://wa.me/60168861454?text=";
+const PHONE = "tel:+60168861454";
 
-function CTA({ text = "WhatsApp SA Alaidin", msg = "Salam, saya berminat dengan kereta recond." }: { text?: string; msg?: string }) {
+function CTA({ text = "WhatsApp SA AYIE", msg = "Salam, saya berminat dengan kereta recond." }: { text?: string; msg?: string }) {
   return (
     <a href={`${WA}${encodeURIComponent(msg)}`} className="btn-primary-toyota" target="_blank" rel="noopener">
       <MessageCircle size={20} strokeWidth={1.5} /> {text}
@@ -95,7 +95,7 @@ function Index() {
       <header className="border-b border-foreground sticky top-0 bg-background z-50">
         <div className="container-toyota flex items-center justify-between h-[72px]">
           <a href="#top" className="font-bold text-[18px] tracking-tight">
-            BUMI<span className="text-primary">.</span>MUHIBAH
+            ECW<span className="text-primary">.</span>MOTORSPORT
           </a>
           <nav className="hidden md:flex items-center gap-2">
             {[
@@ -152,8 +152,8 @@ function Index() {
             <img src={hero} alt="Toyota Alphard recond mewah" width={1600} height={1000} className="w-full h-auto border border-foreground" />
             <div className="absolute -bottom-4 -left-4 hidden md:flex flex-col bg-background border border-foreground p-5">
               <span className="text-[11px] uppercase tracking-wider text-muted-foreground">Bersama anda</span>
-              <span className="text-[18px] font-bold">SA Alaidin</span>
-              <span className="text-[13px] text-muted-foreground">Bumi Muhibah Motors</span>
+              <span className="text-[18px] font-bold">SA AYIE</span>
+              <span className="text-[13px] text-muted-foreground">ECW MOTORSPORT</span>
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@ function Index() {
           <img src={sa} alt="SA Alaidin" width={800} height={1000} loading="lazy" className="w-full border border-foreground" />
           <div>
             <div className="text-[13px] uppercase tracking-wider text-muted-foreground mb-2">Perunding Anda</div>
-            <h2 className="h-section mb-3">Hi, Saya Alaidin dari Bumi Muhibah.</h2>
+            <h2 className="h-section mb-3">Hi, Saya AYIE dari ECW MOTORSPORT.</h2>
             <p className="text-[18px] font-light mb-6">Perunding jualan kereta recond anda.</p>
             <p className="text-[15px] text-foreground/80 mb-8 max-w-xl">
               Ratusan pelanggan telah saya bantu untuk memiliki kereta idaman mereka dengan proses
@@ -184,7 +184,7 @@ function Index() {
                 </li>
               ))}
             </ul>
-            <CTA text="Saya Bantu Anda A–Z" msg="Salam Alaidin, saya berminat dengan recond Alphard/Vellfire." />
+            <CTA text="Saya Bantu Anda A–Z" msg="Salam Ayie, saya berminat dengan recond Alphard/Vellfire." />
           </div>
         </div>
       </section>
@@ -286,7 +286,7 @@ function Index() {
         <div className="container-toyota section-pad grid md:grid-cols-2 gap-12 items-start">
           <div>
             <div className="text-[13px] uppercase tracking-wider text-primary mb-3">Showroom Kami</div>
-            <h2 className="h-section mb-4">Bumi Muhibah Motors, Bandar Baru Bangi.</h2>
+            <h2 className="h-section mb-4">ECW Motorsport, Bandar Baru Bangi.</h2>
             <p className="text-[16px] font-light mb-6 text-foreground/80">
               Pengimport & penjual kereta import (Recond). Anda mencari kereta Alphard & Vellfire
               recond 100% dari Jepun? Disinilah tempatnya.
@@ -295,19 +295,19 @@ function Index() {
               <div className="flex items-start gap-3 mb-3">
                 <MapPin size={20} strokeWidth={1.5} className="shrink-0 mt-1" />
                 <p className="text-[14px] font-light leading-[22px]">
-                  Bumi Muhibah, 45, Jalan P10/21,<br />
+                  ECW Motorsport, Jalan P10/21,<br />
                   Taman Perindustrian Selaman,<br />
                   43650 Bandar Baru Bangi, Selangor.
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={20} strokeWidth={1.5} />
-                <a href={PHONE} className="text-[14px] underline">Alaidin — 013 574 0092</a>
+                <a href={PHONE} className="text-[14px] underline">AYIE - 016-886-1454</a>
               </div>
             </div>
             <CTA />
           </div>
-          <img src={showroom} alt="Showroom Bumi Muhibah" width={1400} height={1000} loading="lazy" className="w-full border border-foreground" />
+          <img src={showroom} alt="Showroom ECW Motorsport" width={1400} height={1000} loading="lazy" className="w-full border border-foreground" />
         </div>
       </section>
 
@@ -319,8 +319,8 @@ function Index() {
             Jom berhubung dengan saya sekarang. Saya akan terangkan apa yang anda nak tahu.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <a href={`${WA}${encodeURIComponent("Salam Alaidin, saya ada soalan.")}`} className="btn-secondary-toyota" style={{ borderColor: "white", color: "white" }}>
-              <MessageCircle size={20} strokeWidth={1.5} /> WhatsApp SA Alaidin
+            <a href={`${WA}${encodeURIComponent("Salam Ayie, saya ada soalan.")}`} className="btn-secondary-toyota" style={{ borderColor: "white", color: "white" }}>
+              <MessageCircle size={20} strokeWidth={1.5} /> WhatsApp SA Ayie
             </a>
             <a href={PHONE} className="btn-secondary-toyota" style={{ borderColor: "white", color: "white" }}>
               <Phone size={20} strokeWidth={1.5} /> Hubungi Saya
@@ -346,13 +346,13 @@ function Index() {
       <footer className="bg-foreground text-background">
         <div className="container-toyota py-12 grid md:grid-cols-3 gap-8 text-[13px] font-light">
           <div>
-            <div className="font-bold text-[16px] mb-3">BUMI MUHIBAH MOTORS</div>
+            <div className="font-bold text-[16px] mb-3">ECW MOTORSPORT</div>
             <p className="opacity-70">Pengimport & penjual kereta import (Recond) — Alphard & Vellfire 100% dari Jepun.</p>
           </div>
           <div>
             <div className="font-bold mb-3">Hubungi</div>
-            <p className="opacity-70">Alaidin — 013 574 0092</p>
-            <p className="opacity-70 mt-2">45, Jalan P10/21, Taman Perindustrian Selaman, 43650 Bandar Baru Bangi.</p>
+            <p className="opacity-70">Ayie - 016-886-1454</p>
+            <p className="opacity-70 mt-2">Jalan P10/21, Taman Perindustrian Selaman, 43650 Bandar Baru Bangi.</p>
           </div>
           <div>
             <div className="font-bold mb-3">Cepat</div>
@@ -365,7 +365,7 @@ function Index() {
         </div>
         <div className="border-t border-background/20">
           <div className="container-toyota py-5 text-[12px] opacity-60">
-            © {new Date().getFullYear()} Bumi Muhibah Motors. All rights reserved.
+            © {new Date().getFullYear()} Web design by Bob SB. All rights reserved.
           </div>
         </div>
       </footer>
